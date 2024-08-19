@@ -1,0 +1,185 @@
+    header {
+    margin-top: 0;
+    }
+    
+    .loader-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.76); /* Color de fondo con opacidad inicial */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    animation: fadeOut 3s forwards; /* Aplica la animación de difuminado */
+    }
+    
+    .loader {
+    width: 100px; /* Ajusta el tamaño de la imagen según sea necesario */
+    height: 100px;
+    animation: spin 2s linear infinite; /* Aplica la animación de rotación */
+    }
+    
+
+    @keyframes fadeOut {
+    from { background-color: rgb(24, 24, 24); } /* Opacidad completa */
+    to { background-color: rgba(19, 145, 230); } /* Opacidad cero */
+  }
+    
+    #content {
+      display: none;
+    }
+
+    #logo {
+    display: block;
+    margin: 0 auto;
+    max-width: 200px;
+    filter: brightness(0) invert(1);
+  }
+
+  * {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('https://i.gifer.com/VJi.gif');
+    background-size: cover;
+    background-position: center;
+}
+
+.wrapper {
+    width: 420px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);       
+    color: #fff;
+    border-radius: 10px;
+    padding: 30px 40px;
+}
+
+.wrapper h1 {
+    font-size: 36px;
+    text-align: center;
+}
+
+.wrapper .input-box {
+    width: 100%;
+    height: 50px;
+
+    margin: 30px 0;
+}
+
+.input-box input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(245, 245, 245, 0.2);
+    border-radius: 40px;
+    font-size: 16px;
+    color: #fffcfc;
+    padding: 20px 45px 20px 20px
+}
+
+.input-box input::placeholder {
+    color: #fff;
+}
+
+.input-box i {
+    position: absolute;
+    right: 5px;
+    top: 37%;
+    transform: translate(-50%);
+    font-size: 20px;
+}
+
+.wrapper .remember-forgot{
+
+    display: flex;
+    justify-content: space-between;
+    font-size: 14.5px;
+    margin: -15px 0 15px;
+}
+
+.remember-forgot label input {
+    accent-color: #fff;
+    margin-right: 3px;
+}
+
+.remember-forgot a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.wrapper .btn {
+    width: 100%;
+    height: 45px;
+    background: #4fe02a;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgb(255, 255, 255);
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    font-weight: 600;
+}
+
+.wrapper .register-link{
+    font-size: 14.5px;
+    text-align: center;
+   margin: 20px 0 15px;
+}
+
+.register-link p a {
+    color:#fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.register-link p a:hover {
+    text-decoration: underline;
+}
+
+.loader-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(24, 24, 24, 0.8); /* Fondo inicial oscuro */
+    z-index: 1000; /* Asegura que el loader esté por encima del contenido */
+  }
+  
+  .loader {
+    width: 100px;
+    height: 100px;
+    animation: spin 2s linear infinite; /* Rotación */
+  }
+  
+  /* Animación de rotación */
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  /* Animación de desvanecimiento */
+  @keyframes fadeOut {
+    from { background-color: rgba(24, 24, 24, 0.8); } /* Fondo oscuro */
+    to { background-color: rgba(19, 145, 230, 0); } /* Fondo transparente */
+  }

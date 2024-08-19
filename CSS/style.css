@@ -1,0 +1,242 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+  
+  #content {
+    display: none;
+  }
+  
+  #logo {
+    display: block;
+    margin: 0 0 0 auto;
+    max-width: 200px;
+    filter: brightness(0) invert(1);
+  }
+  
+/* Estilo para el enlace "Operaciones NOC-TI" */
+  #mainav .drop:hover {
+    font-weight: bold; /* Hace que el texto se vuelva en negrita al pasar el cursor */
+}
+
+.welcome-message {
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  #username {
+    font-size: 17px;
+    font-style: italic;
+  }
+
+/* Estilo para el enlace "Cerrar sesión" */
+    #logout {
+    color: #f80202; /* Color por defecto del texto */
+    text-decoration: none; /* Quita el subrayado del enlace */
+    transition: color 0.50s; /* Agrega una transición suave para el cambio de color */
+    }
+        
+/* Cambia el color del texto al pasar el cursor sobre el enlace */
+    #logout:hover {
+    color: rgb(255, 255, 0); /* Cambia el color del texto a amarillo al pasar el cursor */
+    font-weight: bold; /* Hace que el texto se vuelva en negrita al pasar el cursor */
+    }
+
+/* Estilo opcional para los botones */
+    .btn {
+    cursor: pointer;
+    }
+  
+/* Estilo para habilitar el desplazamiento suave */
+    html {
+    scroll-behavior: smooth;
+    }
+
+
+/* Estilo para el texto */
+    .heading {
+      font-family: "Freestyle Script", cursive; /* Utiliza la fuente Brush Script MT y como alternativa la cursiva predeterminada */
+      font-size: 30px; /* Tamaño de fuente */
+      color: #ffffff; /* Color del texto */
+  }
+  
+  
+/* Estilo para los botones */
+    .btn {
+      font-family: 'Roboto', sans-serif; /* Utiliza la fuente Roboto */
+      font-size: 16px; /* Tamaño de fuente */
+      font-weight: bold; /* Peso de la fuente */
+      text-decoration: none; /* Quita el subrayado del enlace */
+      color: #fff; /* Color del texto */
+      background-color: #007bff00; /* Color de fondo */
+      padding: 10px 20px; /* Espaciado interno */
+      border-radius: 5px; /* Radio del borde */
+      transition: background-color 0.70s; /* Transición suave del color de fondo */
+    }
+  
+    .btn:hover {
+      background-color: #0056b3; /* Cambia el color de fondo al pasar el cursor */
+    }
+
+
+/* Cuando el mouse pasa sobre los botones */
+.btn:hover {
+  color: #000000; /* Color del texto: negro */
+  background-color: #ffffff; /* Color de fondo: blanco */
+}
+
+/* Cuando el mouse pasa sobre los botones de clase "inverse" */
+.btn.inverse:hover {
+  color: #000000; /* Color del texto: negro */
+  background-color: #ffffff; /* Color de fondo: blanco */
+}
+
+.section-container {
+    display: flex;
+  justify-content: flex-end; /* Alinea el contenido hacia el extremo derecho */
+  align-items: center; /* Centra verticalmente */
+  height: 300px; /* Altura de la sección */
+  position: relative; /* Asegura que los elementos posicionados absolutamente sean relativos a este contenedor */
+  width: 900px; /* Ajusta el ancho según sea necesario */
+  }
+
+  .blur-background {
+      position: absolute;
+      top: 0;
+      left: 100px;
+      width: 110%;
+      height: 100%;
+      backdrop-filter: blur(10px); /* Aplica el efecto de desenfoque al fondo */
+  }
+
+  .content {
+      z-index: 1; /* Asegura que el contenido esté por encima del fondo desenfocado */
+      background-color: rgba(255, 255, 255, 0); /* Fondo blanco con transparencia */
+      padding: 20px; /* Ajusta el relleno según sea necesario */
+      border-radius: 10px; /* Redondea las esquinas */
+  }
+
+
+  /* Estilo para los enlaces */
+  .nospace.group li a {
+      color: black; /* Color por defecto del texto */
+      transition: color 0.3s; /* Transición suave para el cambio de color */
+  }
+
+  /* Estilo para el span dentro de los elementos li */
+  .nospace.group li span {
+      color: #999; /* Color por defecto del span */
+      transition: color 0.3s; /* Transición suave para el cambio de color */
+  }
+
+  /* Estilo para los enlaces cuando se pasa el cursor sobre ellos */
+  .nospace.group li a:hover {
+      color: red; /* Cambiar el color del texto al pasar el cursor sobre el enlace */
+  }
+
+  /* Estilo para el span dentro de los elementos li cuando se pasa el cursor sobre el enlace */
+  .nospace.group li a:hover span {
+      color: blue; /* Cambiar el color del span al pasar el cursor sobre el enlace */
+  }
+
+  .section-container {
+    display: flex;
+  justify-content: flex-end; /* Alinea el contenido hacia el extremo derecho */
+  align-items: center; /* Centra verticalmente */
+  height: 300px; /* Altura de la sección */
+  position: relative; /* Asegura que los elementos posicionados absolutamente sean relativos a este contenedor */
+  width: 900px; /* Ajusta el ancho según sea necesario */
+  }
+
+  .blur-background {
+      position: absolute;
+      top: 0;
+      left: 100px;
+      width: 110%;
+      height: 100%;
+      backdrop-filter: blur(10px); /* Aplica el efecto de desenfoque al fondo */
+  }
+
+  .content {
+      z-index: 1; /* Asegura que el contenido esté por encima del fondo desenfocado */
+      background-color: rgba(255, 255, 255, 0); /* Fondo blanco con transparencia */
+      padding: 20px; /* Ajusta el relleno según sea necesario */
+      border-radius: 10px; /* Redondea las esquinas */
+  }
+
+  .section-container {
+    display: flex;
+  justify-content: flex-end; /* Alinea el contenido hacia el extremo derecho */
+  align-items: center; /* Centra verticalmente */
+  height: 300px; /* Altura de la sección */
+  position: relative; /* Asegura que los elementos posicionados absolutamente sean relativos a este contenedor */
+  width: 900px; /* Ajusta el ancho según sea necesario */
+  }
+
+  .blur-background {
+      position: absolute;
+      top: 0;
+      left: 100px;
+      width: 110%;
+      height: 100%;
+      backdrop-filter: blur(10px); /* Aplica el efecto de desenfoque al fondo */
+  }
+
+  .content {
+      z-index: 1; /* Asegura que el contenido esté por encima del fondo desenfocado */
+      background-color: rgba(255, 255, 255, 0); /* Fondo blanco con transparencia */
+      padding: 20px; /* Ajusta el relleno según sea necesario */
+      border-radius: 10px; /* Redondea las esquinas */
+  }
+
+  /* Aquí va el CSS que quieres agregar */
+  @media screen and (max-width:750px) {
+    .one_third {
+      width: 100%;
+      margin-bottom: 50px;
+    }
+  }
+
+  .section-container {
+    display: flex;
+  justify-content: flex-end; /* Alinea el contenido hacia el extremo derecho */
+  align-items: center; /* Centra verticalmente */
+  height: 300px; /* Altura de la sección */
+  position: relative; /* Asegura que los elementos posicionados absolutamente sean relativos a este contenedor */
+  width: 900px; /* Ajusta el ancho según sea necesario */
+  }
+
+  .blur-background {
+      position: absolute;
+      top: 0;
+      left: 100px;
+      width: 110%;
+      height: 100%;
+      backdrop-filter: blur(10px); /* Aplica el efecto de desenfoque al fondo */
+  }
+
+  .content {
+      z-index: 1; /* Asegura que el contenido esté por encima del fondo desenfocado */
+      background-color: rgba(255, 255, 255, 0); /* Fondo blanco con transparencia */
+      padding: 20px; /* Ajusta el relleno según sea necesario */
+      border-radius: 10px; /* Redondea las esquinas */
+  }
+
+  /* Estilo para los enlaces */
+  .nospace.group li a {
+      color: black; /* Color por defecto del texto */
+      transition: color 0.3s; /* Transición suave para el cambio de color */
+  }
+
+  /* Estilo para el span dentro de los elementos li */
+  .nospace.group li span {
+      color: #999; /* Color por defecto del span */
+      transition: color 0.3s; /* Transición suave para el cambio de color */
+  }
+
+  /* Estilo para los enlaces cuando se pasa el cursor sobre ellos */
+  .nospace.group li a:hover {
+      color: red; /* Cambiar el color del texto al pasar el cursor sobre el enlace */
+  }
+
+  /* Estilo para el span dentro de los elementos li cuando se pasa el cursor sobre el enlace */
+  .nospace.group li a:hover span {
+      color: blue; /* Cambiar el color del span al pasar el cursor sobre el enlace */
+  }
