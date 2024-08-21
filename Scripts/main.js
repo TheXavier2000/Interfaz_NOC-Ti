@@ -23,16 +23,16 @@ document.addEventListener("DOMContentLoaded", async () => {
     authToken = storedToken;
 
     // Verifica si el usuario está tratando de acceder a "/HTML/index.html" manualmente
-    if (currentPath.includes("/HTML/index.html")) {
+    if (currentPath.includes("../HTML/index.html")) {
       // Determina la página a la que debe redirigirse el usuario
-      const redirectTo = "/HTML/main.html";
+      const redirectTo = "../HTML/main.html";
       window.location.href = redirectTo;
     }
   } else {
     // Verifica si el usuario está tratando de acceder a "/HTML/main.html" manualmente
-    if (currentPath.includes("/HTML/main.html")) {
+    if (currentPath.includes("../HTML/main.html")) {
       // Si el usuario no está logueado, redirige a la página de inicio de sesión
-      window.location.href = "/HTML/index.html";
+      window.location.href = "../HTML/index.html";
     }
   }
   
@@ -105,7 +105,7 @@ async function login(event) {
 
           if (perteneceAAlgunGrupoPrimerConjunto) {
             // Pasar el nombre de usuario como un parámetro de consulta
-            const url = new URL("/HTML/main.html", window.location.href);
+            const url = new URL("../HTML/main.html", window.location.href);
             url.searchParams.append("username", username);
             window.location.href = url.toString();
           } else {
@@ -117,7 +117,7 @@ async function login(event) {
 
             if (perteneceAAlgunGrupoSegundoConjunto) {
               // Realizar la redirección a la interfaz correspondiente
-              window.location.href = "ppp.html";
+              window.location.href = "../HTML/index.html";
             } else {
               // Redirigir a la página principal "/HTML/main.html"
               // window.location.href = "/HTML/main.html";
@@ -170,7 +170,7 @@ async function logout() {
       authToken = null;
 
       // Redirigir a la página de inicio de sesión
-      window.location.href = "/HTML/index.html";
+      window.location.href = "../HTML/index.html";
     } catch (error) {
       console.error("Error al realizar la solicitud:", error);
     }
@@ -218,7 +218,7 @@ async function checkLoggedIn() {
   const storedToken = localStorage.getItem("authToken");
   if (!storedToken) {
     // Si no hay un token almacenado, redirigir a la página de inicio de sesión
-    window.location.href = "/HTML/index.html";
+    window.location.href = "../HTML/index.html";
     return;
   }
 
@@ -227,10 +227,10 @@ async function checkLoggedIn() {
     const sessionValid = await checkSession(storedToken);
     if (!sessionValid) {
       // Si la sesión no es válida, redirigir a la página de inicio de sesión
-      window.location.href = "/HTML/index.html";
+      window.location.href = "../HTML/index.html";
     }
   } catch (error) {
     // Si hay un error, redirigir a la página de inicio de sesión
-    window.location.href = "/HTML/index.html";
+    window.location.href = "../HTML/index.html";
   }
 }
