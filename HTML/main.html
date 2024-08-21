@@ -36,44 +36,31 @@
     </div>
     
     <nav id="mainav" class="fl_right" style="margin-top: 35px;"> 
-
       <ul class="clear">
         <p class="welcome-message">Bienvenido, <span id="username"></span></p>
         <li class="active"><a href="/HTML/main.html">Home</a></li>
-        <li><a class="drop" href="#Operaciones">Operaciones NOC-TI</a>
-
-        </li>
+        <li><a class="drop" href="#Operaciones">Operaciones NOC-TI</a></li>
         <li><a class="drop" href="#services">Aplicativos</a>
-       
-          
-
           <li><a class="drop" href="#ctdetails">Gestión de Usuarios</a>
-
-            <li><a class="drop" href="#Manuales">Manuales</a>
-
-        </li>
+            <li><a class="drop" href="#Manuales">Manuales</a></li>
 
         <li><a class="drop" href="#Formulario">Formularios</a>
-
     <ul>
       <li><a class="drop" href="https://forms.office.com/Pages/ResponsePage.aspx?id=jtFo4ChOjUeN8pBewhBOSRZdPt97Ng5Di8yQykIOw5NUMUFXVE41Q0xZUjZLOFRDNk5DWU5CRzJRQy4u" target="_blank">Check list</a>
         <li><a class="drop" href="https://forms.office.com/Pages/ResponsePage.aspx?id=jtFo4ChOjUeN8pBewhBOSRZdPt97Ng5Di8yQykIOw5NUNUIxWFU4RlA0SkEyMUdUQTVOM0laWTc0Ny4u" target="_blank">Previas Trial</a>
           <li><a class="drop" href="https://forms.office.com/Pages/ResponsePage.aspx?id=jtFo4ChOjUeN8pBewhBOSRZdPt97Ng5Di8yQykIOw5NUNzE1TFVWS0NMWjU3N1A5MVEwVDhaWDBKNi4u" target="_blank">Previas Bill</a>
     </ul>
       </li>
-
       <a class="drop" id="logout" onclick="logout()"  href="#">Cerrar sesión</a>
-
       </ul>
-      
     </nav>
   </header>
   
   <div id="pageintro" class="hoc clear"> 
-
 <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
 
 <article>
+  <link rel="stylesheet" href="/CSS/style.css">
   <h3 class="heading">Interfaz Principal NOC-TI</h3>
   <footer>
       <ul class="nospace inline pushright">
@@ -109,65 +96,17 @@
               <li><span>1</span><a href="http://10.142.24.111/clientes/formMacroGraph.html" target="_blank" class="link1">Interfaz de Macros</a></li>
               <li><span>2</span><a href="http://10.142.24.111/clientes/main.html" target="_blank" class="link2">Agregar equipo en Zabbix</a></li>
               <li><span>3</span><a href="https://sar.azteca-comunicaciones.com:8144/Viewer?reporte_id=9519" target="_blank" class="link3">Pruebas de Velocidad Santa Rosalia y Primavera</a></li>
+              <li><span>4</span><a href="http://10.142.24.111/DiscoveryRule/DRule.html" target="_blank" class="link4">Ejecución Discovery Rule</a></li>
+              <li><span>5</span><a href="http://10.142.24.111/ICMProblems/HTML/index.html" target="_blank" class="link5">Generación de Informes</a></li>
+              <li><span>6</span><a href="" target="_blank" class="link6">Deshabilitar Equipos (Proximamente...)</a></li>
           </ul>
       </div>
       <div class="one_third last">
-          <a class="imgover" ><img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExdGw3YnZ2YmNmMHRuNHc4MTU4dnBtNDFsYXZ1N2xzeTh2M3pvc3RiMiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/XuBNdP9Pb7W9i/giphy.gif" alt="" id="imagePlaceholder" style="opacity: 1;"></a>
+         <img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExdGw3YnZ2YmNmMHRuNHc4MTU4dnBtNDFsYXZ1N2xzeTh2M3pvc3RiMiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/XuBNdP9Pb7W9i/giphy.gif" alt="" id="imagePlaceholder" style="opacity: 1;">
       </div>
   </article>
   
-  <script>
-    // Almacenar la URL del GIF por defecto
-    var urlGifPorDefecto = "https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExdGw3YnZ2YmNmMHRuNHc4MTU4dnBtNDFsYXZ1N2xzeTh2M3pvc3RiMiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/XuBNdP9Pb7W9i/giphy.gif";
 
-    // Función para cambiar la imagen
-    function cambiarImagen(urlImagen) {
-        document.getElementById("imagePlaceholder").src = urlImagen;
-    }
-
-    // Establecer la imagen por defecto
-    cambiarImagen(urlGifPorDefecto);
-
-    // Obtener el elemento de la imagen
-    var imagen = document.getElementById("imagePlaceholder");
-
-    // Evitar que la imagen se cambie cuando el cursor está sobre ella
-    imagen.addEventListener("mouseover", function(event) {
-        event.stopPropagation();
-    });
-
-        // Obtener todos los enlaces
-        var enlaces = document.querySelectorAll("#points a");
-
-// Agregar eventos a cada enlace para cambiar la imagen
-enlaces.forEach(function(enlace) {
-    enlace.addEventListener("mouseover", function() {
-        // Obtener la clase del enlace
-        var clase = enlace.classList[0];
-        // Definir la URL de la imagen basada en la clase del enlace
-        var urlImagen;
-        switch (clase) {
-            case "link1":
-                urlImagen = "https://sappiencia.com/images/dashboard-inteligentes-sappiencia.gif";
-                break;
-            case "link2":
-                urlImagen = "https://cdn.dribbble.com/users/970957/screenshots/5381809/1.gif";
-                break;
-            case "link3":
-                urlImagen = "https://i.pinimg.com/originals/cc/3c/8c/cc3c8c6e11c26d1ee8926f54234ab89b.gif";
-                break;
-            // Agregar más casos para más enlaces
-        }
-        // Cambiar la imagen al pasar el cursor sobre el enlace
-        cambiarImagen(urlImagen);
-    });
-    // Restaurar la imagen por defecto cuando el cursor sale del enlace
-    enlace.addEventListener("mouseout", function() {
-        cambiarImagen(urlGifPorDefecto);
-    });
-});
-</script>
-  
     <!-- ################################################################################################ -->
   </section>
 
@@ -266,7 +205,7 @@ enlaces.forEach(function(enlace) {
     <!-- Enlace alrededor de la imagen -->
     <h6 class="heading">SAR</h6>
     <a href="https://sar.azteca-comunicaciones.com:8144/Login" target="_blank">
-      <img src="https://static.stocktitan.net/company-logo/sar-lg.webp" alt="SAR" style="max-width: 100px; max-height: 100px;">
+      <img src="https://static.vecteezy.com/system/resources/previews/029/146/293/original/sar-logo-design-inspiration-for-a-unique-identity-modern-elegance-and-creative-design-watermark-your-success-with-the-striking-this-logo-vector.jpg" alt="SAR" style="max-width: 100px; max-height: 100px;">
     </a>
   </article>  
 </li>
@@ -462,61 +401,9 @@ enlaces.forEach(function(enlace) {
           </ul>
       </div>
       <div class="one_third last">
-          <a class="imgover" ><img src="https://i.gifer.com/E2Ak.gif" alt="" id="imagePlaceholder" style="opacity: 1;"></a>
+          <a ><img src="https://i.gifer.com/E2Ak.gif" alt="" id="imagePlaceholder" style="opacity: 1;"></a>
       </div>
   </article>
-  
-  <script>
-    // Almacenar la URL del GIF por defecto
-    var urlGifPorDefecto = "https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExdGw3YnZ2YmNmMHRuNHc4MTU4dnBtNDFsYXZ1N2xzeTh2M3pvc3RiMiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/XuBNdP9Pb7W9i/giphy.gif";
-
-    // Función para cambiar la imagen
-    function cambiarImagen(urlImagen) {
-        document.getElementById("imagePlaceholder").src = urlImagen;
-    }
-
-    // Establecer la imagen por defecto
-    cambiarImagen(urlGifPorDefecto);
-
-    // Obtener el elemento de la imagen
-    var imagen = document.getElementById("imagePlaceholder");
-
-    // Evitar que la imagen se cambie cuando el cursor está sobre ella
-    imagen.addEventListener("mouseover", function(event) {
-        event.stopPropagation();
-    });
-
-        // Obtener todos los enlaces
-        var enlaces = document.querySelectorAll("#points a");
-
-// Agregar eventos a cada enlace para cambiar la imagen
-enlaces.forEach(function(enlace) {
-    enlace.addEventListener("mouseover", function() {
-        // Obtener la clase del enlace
-        var clase = enlace.classList[0];
-        // Definir la URL de la imagen basada en la clase del enlace
-        var urlImagen;
-        switch (clase) {
-            case "link1":
-                urlImagen = "https://sappiencia.com/images/dashboard-inteligentes-sappiencia.gif";
-                break;
-            case "link2":
-                urlImagen = "https://cdn.dribbble.com/users/970957/screenshots/5381809/1.gif";
-                break;
-            case "link3":
-                urlImagen = "https://i.pinimg.com/originals/cc/3c/8c/cc3c8c6e11c26d1ee8926f54234ab89b.gif";
-                break;
-            // Agregar más casos para más enlaces
-        }
-        // Cambiar la imagen al pasar el cursor sobre el enlace
-        cambiarImagen(urlImagen);
-    });
-    // Restaurar la imagen por defecto cuando el cursor sale del enlace
-    enlace.addEventListener("mouseout", function() {
-        cambiarImagen(urlGifPorDefecto);
-    });
-});
-</script>
   
     <!-- ################################################################################################ -->
   </section>
@@ -557,10 +444,11 @@ enlaces.forEach(function(enlace) {
   </script>
 
 <!-- JAVASCRIPTS -->
-<script src="./src/main.js"></script>
+<script src="/Scripts/main.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
-<script src="layout/scripts/jquery.min.js"></script>
-<script src="layout/scripts/jquery.backtotop.js"></script>
-<script src="layout/scripts/jquery.mobilemenu.js"></script>
+<script src="/Scripts/jquery.min.js"></script>
+<script src="/Scripts/ImageURL.js"></script>
+<script src="/Scripts/jquery.backtotop.js"></script>
+<script src="/Scripts/jquery.mobilemenu.js"></script>
 </body>
 </html>
