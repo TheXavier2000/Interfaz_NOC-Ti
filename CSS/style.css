@@ -268,4 +268,7 @@
       to { background-color: rgba(19, 145, 230); } /* Opacidad cero */
     }
 
-    
+    .firma {
+      font-family: "Freestyle Script", cursive;
+      font-size: 25px;
+    }
