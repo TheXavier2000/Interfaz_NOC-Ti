@@ -39,7 +39,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     urlImagen = "https://i.pinimg.com/originals/cc/3c/8c/cc3c8c6e11c26d1ee8926f54234ab89b.gif";
                     break;
                 case "link4":
-                    urlImagen = "https://miro.medium.com/v2/resize:fit:640/format:webp/0*Dicd7h75vA0PMHIG.gif";
+                    urlImagen = "https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExbHY2ZTJmNmlveml4dWVjd3J2Zmh2eDRpaXFtZzB5bXY5a200NHhyNSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/l46Cy1rHbQ92uuLXa/giphy.webp";
                     break;
                 case "link5":
                     urlImagen = "https://i.pinimg.com/originals/f9/85/78/f98578a4f210b726dfea429f68c0c05b.gif";
